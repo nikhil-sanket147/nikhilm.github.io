@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav container">
+
+            <h2 class="logo">MyPortfolio</h2>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <button id="theme-toggle" class="theme-btn">
+                    🌙
+                </button>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-grid">
+
+                <div class="hero-text">
+
+                    <h1 class="fade-in">
+                        Hi, I'm <span>Your Name</span>
+                    </h1>
+
+                    <p class="fade-in">
+                        Frontend Developer building modern web experiences.
+                    </p>
+
+                    <a href="#projects" class="btn fade-in">
+                        View My Work
+                    </a>
+
+                </div>
+
+                <div class="hero-image fade-in">
+
+                    <!-- <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" /> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <div id="projects-container" class="projects-grid">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+
+    <div id="project-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn">
+                &times;
+            </span>
+
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-description"></p>
+
+            <ul id="modal-tech"></ul>
+
+            <a id="modal-link" class="btn" target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+    </div>
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    HTML
+                </div>
+
+                <div class="skill">
+                    CSS
+                </div>
+
+                <div class="skill">
+                    JavaScript
+                </div>
+
+                <div class="skill">
+                    React
+                </div>
+
+                <div class="skill">
+                    Node.js
+                </div>
+
+                <div class="skill">
+                    Git
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="resume" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Resume
+            </h2>
+
+            <p>
+                Download my professional resume below.
+            </p>
+
+            <a href="assets/Resume.pdf" download class="btn">
+                Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <form id="contact-form" class="contact-form">
+
+                <input type="text" placeholder="Your Name" required />
+
+                <input type="email" placeholder="Email Address" required />
+
+                <textarea placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Your Name
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
