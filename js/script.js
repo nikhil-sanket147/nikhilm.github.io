@@ -81,6 +81,58 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
 
 });
 
+// =============================
+// SCROLL REVEAL
+// =============================
+
+const reveals = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const elementTop = section.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+
+            section.classList.add("show");
+
+        }
+
+    });
+
+});
+
+// =============================
+// INITIAL SCROLL REVEAL
+// =============================
+
+function revealOnLoad() {
+
+    const reveals = document.querySelectorAll(".section");
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const elementTop =
+            section.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+
+            section.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+    "DOMContentLoaded",
+    revealOnLoad
+);
+
 
 // =============================
 // CONTACT FORM
@@ -110,6 +162,8 @@ if (form && message) {
 // =============================
 // PROJECTS + MODAL SYSTEM
 // =============================
+
+
 
 const container =
     document.getElementById("projects-container");
@@ -153,25 +207,38 @@ function renderProjects() {
 
     projects.forEach(project => {
 
+        const techBadges =
+    project.technologies
+        .map(tech =>
+            `<span class="tech-badge">${tech}</span>`
+        )
+        .join("");
+
         const card =
             document.createElement("div");
 
         card.classList.add("project-card");
 
         card.innerHTML = `
-            <h3>${project.title}</h3>
 
-            <p class="project-period">
-                ${project.period}
-            </p>
+        <h3>${project.title}</h3>
 
-            <p>
-                ${project.description.substring(0, 100)}...
-            </p>
+        <p class="project-period">
+        ${project.period}
+        </p>
 
-            <button class="btn-small">
-                View Details
-            </button>
+        <p>
+        ${project.description.substring(0, 100)}...
+        </p>
+
+        <div class="tech-container">
+        ${techBadges}
+        </div>
+
+        <button class="btn-small">
+        View Details
+        </button>
+
         `;
 
         card.addEventListener("click", () => {
@@ -623,3 +690,36 @@ document.addEventListener(
 
     }
 );
+
+// =============================
+// ACTIVE NAV LINK HIGHLIGHT
+// =============================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 100;
+
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+
+    });
+
+});

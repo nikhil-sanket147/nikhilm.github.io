@@ -4,32 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="styles.css">
-
+    <title>
+        Nikhil Mhaske | Full Stack Developer | Angular .NET React
+    </title>
+    <meta name="description"
+        content="Full Stack Developer with 3.5+ years experience in Angular, .NET Core, React and Flutter building scalable enterprise applications." />
+    <meta name="author" content="Nikhil Mhaske" />
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header class="header">
-
         <nav class="nav container">
-
             <h2 class="logo">MyPortfolio</h2>
-
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="assets/Resume.pdf" download class="btn nav-btn">
+                        Download Resume
+                    </a>
+                </li>
             </ul>
 
             <div class="nav-actions">
-
                 <button id="theme-toggle" class="theme-btn">
                     🌙
                 </button>
@@ -39,271 +45,193 @@
                     <span></span>
                     <span></span>
                 </div>
-
             </div>
-
         </nav>
-
     </header>
 
     <section id="home" class="hero">
-
         <div class="container">
-
             <div class="hero-layout">
-
                 <!-- LEFT: PROFILE PHOTO -->
-
                 <div class="hero-photo fade-in">
-
-                    <img src="assets/profile.jpg" alt="Nikhil Profile Photo" class="profile-img" />
-
+                    <img src="assets/profile.jpg" loading="lazy" alt="Nikhil Profile Photo" class="profile-img" />
                 </div>
 
-
                 <!-- RIGHT: DETAILS -->
-
                 <div class="hero-details fade-in">
-
                     <h1 class="hero-name">
                         Nikhil Mhaske
                     </h1>
-
                     <h2 class="hero-role">
-
                         Full Stack Developer
-
                         <span class="divider">|</span>
-
                         Angular • .NET Core • React • Flutter
-
                         <span class="divider">|</span>
-
                         3.5+ Years
-
                     </h2>
 
-
                     <!-- CONTACT INFO -->
-
                     <div class="hero-contact">
-
                         <span>📞 +91 7083347987</span>
-
-                        <span>📧 nikhilmhaske147@gmail.com</span>
-
+                        <a href="mailto:nikhilmhaske147@gmail.com">
+                            📧 nikhilmhaske147@gmail.com
+                        </a>
                         <span>📍 Pune, Maharashtra</span>
-
                         <a href="https://linkedin.com/in/nikhil-mhaske-6853ab238" target="_blank" class="linkedin-link">
                             🔗 LinkedIn Profile
                         </a>
-
                     </div>
 
-
                     <!-- SUMMARY -->
-
                     <p class="hero-summary">
-
                         Full Stack Developer with 3+ years of hands-on experience
                         building and delivering enterprise-grade web and mobile
                         applications. Specialized in Angular (frontend architecture)
                         and .NET Core (RESTful APIs & microservices), with
                         additional expertise in React JS and Flutter.
-
                         Promoted to Senior/Lead role within 1 year. Delivered
                         4+ production applications serving 500+ users, improving
                         team development efficiency by 30% through reusable
                         component libraries. Strong background in Agile delivery,
                         client communication, and end-to-end SDLC.
-
                     </p>
-
 
                     <a href="#projects" class="btn">
                         View My Work
                     </a>
-
                 </div>
-
             </div>
-
         </div>
+    </section>
 
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat">
+                <h2>3.5+</h2>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat">
+                <h2>4+</h2>
+                <p>Production Applications</p>
+            </div>
+            <div class="stat">
+                <h2>500+</h2>
+                <p>Active Users</p>
+            </div>
+            <div class="stat">
+                <h2>30%</h2>
+                <p>Development Efficiency Improvement</p>
+            </div>
+        </div>
     </section>
 
     <section id="experience" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Professional Experience
             </h2>
-
             <div id="experience-container">
-
             </div>
-
         </div>
-
     </section>
 
     <section id="projects" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Projects
             </h2>
-
             <div id="projects-container" class="projects-grid">
             </div>
-
         </div>
-
     </section>
 
     <!-- Modal -->
-
     <div id="project-modal" class="modal">
-
         <div class="modal-content">
-
             <span class="close-btn">
                 &times;
             </span>
-
             <h2 id="modal-title"></h2>
-
             <p id="modal-period" class="modal-period"></p>
-
             <p id="modal-role" class="modal-role"></p>
-
             <p id="modal-description"></p>
-
             <h4>Technologies</h4>
             <ul id="modal-tech"></ul>
-
             <h4>Key Impact</h4>
             <ul id="modal-metrics"></ul>
-
         </div>
-
     </div>
 
     <section id="skills" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Skills
             </h2>
-
             <div id="skills-container">
-
             </div>
-
         </div>
-
     </section>
 
     <section id="education" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Education
             </h2>
-
             <div id="education-container"></div>
-
         </div>
-
     </section>
 
     <section id="certifications" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Certifications
             </h2>
-
             <div id="certifications-container" class="certificates-grid">
             </div>
-
         </div>
-
     </section>
 
     <section id="achievements" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Key Achievements
             </h2>
-
             <ul id="achievements-container"></ul>
-
         </div>
-
-    </section>
-
-    <section id="resume" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Resume
-            </h2>
-
-            <p>
-                Download my professional resume below.
-            </p>
-
-            <a href="assets/Resume.pdf" download class="btn">
-                Download Resume
-            </a>
-
-        </div>
-
     </section>
 
     <section id="contact" class="section">
-
         <div class="container">
-
             <h2 class="section-title">
                 Contact Me
             </h2>
-
             <form id="contact-form" class="contact-form">
-
                 <input type="text" placeholder="Your Name" required />
-
                 <input type="email" placeholder="Email Address" required />
-
                 <textarea placeholder="Your Message" required></textarea>
-
                 <button type="submit" class="btn">
                     Send Message
                 </button>
-
                 <p id="form-message"></p>
-
             </form>
-
         </div>
-
     </section>
 
     <footer class="footer">
-
         <p>
             © 2026 Nikhil M.
         </p>
-
+        <div class="footer-links">
+            <a href="mailto:nikhilmhaske147@gmail.com">
+                Email
+            </a>
+            <a href="https://linkedin.com/in/nikhil-mhaske-6853ab238">
+                LinkedIn
+            </a>
+            <a href="assets/Resume.pdf" download>
+                Resume
+            </a>
+        </div>
     </footer>
 
     <script src="js/projects.js"></script>
