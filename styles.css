@@ -917,32 +917,73 @@ textarea {
 }
 
 .stats {
-
     background: var(--card);
-    padding: 60px 0;
-
+    padding: 60px 20px;
 }
 
 .stats-grid {
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     text-align: center;
+}
 
+.stat {
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .stat h2 {
-
     font-size: 36px;
     color: var(--primary);
-
+    font-weight: 700;
 }
 
 .stat p {
-
     margin-top: 8px;
     font-weight: 500;
+    font-size: 16px;
+    color: var(--text);
+}
 
+/* Tablet */
+
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .stats {
+        padding: 40px 16px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .stat {
+        padding: 16px;
+    }
+
+    .stat h2 {
+        font-size: 28px;
+    }
+
+    .stat p {
+        font-size: 14px;
+    }
 }
 
 .section {
