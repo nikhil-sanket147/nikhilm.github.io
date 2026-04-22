@@ -372,3 +372,254 @@ document.addEventListener(
 
     }
 );
+
+// =============================
+// EXPERIENCE RENDERING
+// =============================
+
+const experienceContainer =
+    document.getElementById(
+        "experience-container"
+    );
+
+function renderExperience() {
+
+    if (!experienceContainer ||
+        typeof experienceData === "undefined") {
+        return;
+    }
+
+    experienceContainer.innerHTML = "";
+
+    experienceData.forEach(job => {
+
+        const card =
+            document.createElement("div");
+
+        card.classList.add(
+            "experience-card"
+        );
+
+        const responsibilitiesList =
+            job.responsibilities
+                .map(item =>
+                    `<li>${item}</li>`
+                )
+                .join("");
+
+        const techBadges =
+            job.technologies
+                .map(tech =>
+                    `<span class="tech-badge">${tech}</span>`
+                )
+                .join("");
+
+        card.innerHTML = `
+
+            <h3 class="experience-title">
+                ${job.title}
+            </h3>
+
+            <p class="experience-company">
+                ${job.company} | ${job.location}
+            </p>
+
+            <p class="experience-period">
+                ${job.period}
+            </p>
+
+            <ul class="experience-list">
+                ${responsibilitiesList}
+            </ul>
+
+            <div class="tech-container">
+                ${techBadges}
+            </div>
+
+        `;
+
+        experienceContainer.appendChild(card);
+
+    });
+
+}
+
+
+// Initialize
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        renderExperience();
+
+    }
+);
+
+// =============================
+// EDUCATION RENDERING
+// =============================
+
+const educationContainer =
+    document.getElementById(
+        "education-container"
+    );
+
+function renderEducation() {
+
+    if (!educationContainer ||
+        typeof educationData === "undefined") {
+        return;
+    }
+
+    educationContainer.innerHTML = "";
+
+    educationData.forEach(item => {
+
+        const card =
+            document.createElement("div");
+
+        card.classList.add(
+            "education-card"
+        );
+
+        card.innerHTML = `
+
+            <h3>
+                ${item.degree}
+            </h3>
+
+            <p class="education-university">
+                ${item.university}
+            </p>
+
+            <p class="education-period">
+                ${item.period}
+            </p>
+
+            <p class="education-score">
+                Score: ${item.score}
+            </p>
+
+        `;
+
+        educationContainer.appendChild(card);
+
+    });
+
+}
+
+
+// =============================
+// CERTIFICATIONS RENDERING
+// =============================
+
+const certificationsContainer =
+    document.getElementById(
+        "certifications-container"
+    );
+
+function renderCertifications() {
+
+    if (!certificationsContainer ||
+        typeof certificationsData === "undefined") {
+        return;
+    }
+
+    certificationsContainer.innerHTML = "";
+
+    certificationsData.forEach(cert => {
+
+        const card =
+            document.createElement("div");
+
+        card.classList.add(
+            "certificate-card"
+        );
+
+        card.innerHTML = `
+
+            <div class="certificate-icon">
+
+                📄
+
+            </div>
+
+            <div class="certificate-content">
+
+                <h4>
+                    ${cert.name}
+                </h4>
+
+                <p class="certificate-issuer">
+                    ${cert.issuer}
+                </p>
+
+                <a
+                    href="${cert.pdf}"
+                    target="_blank"
+                    class="certificate-link"
+                >
+                    View Certificate
+                </a>
+
+            </div>
+
+        `;
+
+        certificationsContainer.appendChild(card);
+
+    });
+
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    renderCertifications
+);
+
+// =============================
+// ACHIEVEMENTS RENDERING
+// =============================
+
+const achievementsContainer =
+    document.getElementById(
+        "achievements-container"
+    );
+
+function renderAchievements() {
+
+    if (!achievementsContainer ||
+        typeof achievementsData === "undefined") {
+        return;
+    }
+
+    achievementsContainer.innerHTML = "";
+
+    achievementsData.forEach(item => {
+
+        const li =
+            document.createElement("li");
+
+        li.textContent =
+            item.text;
+
+        achievementsContainer.appendChild(li);
+
+    });
+
+}
+
+
+// Initialize
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        renderEducation();
+        renderCertifications();
+        renderAchievements();
+
+    }
+);
