@@ -4,18 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
     <title>
         Nikhil Mhaske | Full Stack Developer | Angular .NET React
     </title>
     <meta name="description"
         content="Full Stack Developer with 3.5+ years experience in Angular, .NET Core, React and Flutter building scalable enterprise applications." />
+    <meta name="keywords"
+        content="Nikhil Mhaske, Full Stack Developer, Angular Developer, .NET Developer, React Developer, Software Engineer, Pune Developer" />
     <meta name="author" content="Nikhil Mhaske" />
-    <meta name="theme-color" content="#4f46e5">
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#4f46e5" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HMC0MZDNS">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-XXXXXXXXXX");
+    </script>
 </head>
 
 <body>
@@ -29,7 +45,7 @@
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="assets/Resume.pdf" download class="btn nav-btn">
+                    <a href="assets/Resume.pdf" download class="btn nav-btn" onclick="gtag('event','resume_download');">
                         Download Resume
                     </a>
                 </li>
