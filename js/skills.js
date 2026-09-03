@@ -30,7 +30,7 @@ const skillsData = [
             "LINQ",
             "Microservices",
             "Event-Driven Architecture",
-            "JWT & OAuth 2.0 Authentication",
+            "JWT",
             "CI/CD Pipelines"
         ]
 
@@ -70,6 +70,7 @@ const skillsData = [
             "Agile / Scrum",
             "SOLID Principles",
             "Design Patterns",
+            "Repository Pattern",
             "Component-Based Architecture",
             "System Design",
             "Code Review",

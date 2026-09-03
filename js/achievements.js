@@ -9,19 +9,19 @@ const achievementsData = [
     {
         id: 2,
         text:
-            "Delivered 4+ enterprise production applications using .NET Core and Angular on time, each serving 500+ active users."
+            "Delivered 3+ enterprise production applications using .NET Core and Angular on time, each serving 500+ active users."
     },
 
     {
         id: 3,
         text:
-            "Reduced average API response time by 25% by implementing Redis caching strategies for high-traffic endpoints."
+            "Reduced average API response time by 20% by implementing Redis caching strategies for high-traffic endpoints."
     },
 
     {
         id: 4,
         text:
-            "Reduced frontend development effort by ~30% by architecting reusable Angular component libraries adopted across multiple projects."
+            "Reduced frontend development effort by ~20% by architecting reusable Angular component libraries adopted across multiple projects."
     },
 
     {
@@ -33,7 +33,7 @@ const achievementsData = [
     {
         id: 6,
         text:
-            "Reduced manual HR document handling effort by 40% through automated Angular + .NET Core workflows with role-based access control."
+            "Reduced manual HR document handling effort by 20% through automated Angular + .NET Core workflows with role-based access control."
     }
 
 ];

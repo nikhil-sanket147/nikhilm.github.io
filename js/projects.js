@@ -8,7 +8,7 @@ const projects = [
         period: "Sep 2024 – Jul 2026",
 
         description:
-            "Leading full-stack development of a large-scale employee survey platform with advanced reporting and data visualization dashboards built on Angular 17 and .NET Core Web API with SQL Server backend. Architected the backend as microservices and secured APIs using JWT/OAuth 2.0. Implemented analytics features providing actionable HR insights for enterprise stakeholders managing 1,000+ employee responses. Built scheduled Azure Functions for automated report generation and contributed to CI/CD pipelines.",
+            "Leading full-stack development of a large-scale employee survey platform with advanced reporting and data visualization dashboards built on Angular 17 and .NET Core Web API with SQL Server backend. Architected the backend as microservices and secured APIs using JWT. Implemented analytics features providing actionable HR insights for enterprise stakeholders managing 1,000+ employee responses. Built scheduled Azure Functions for automated report generation and contributed to CI/CD pipelines.",
 
         technologies: [
             "Angular 17",
@@ -19,7 +19,7 @@ const projects = [
             "Entity Framework",
             "LINQ",
             "RESTful APIs",
-            "JWT & OAuth 2.0",
+            "JWT",
             "Event-Driven Architecture",
             "SQL Server",
             "RxJS",

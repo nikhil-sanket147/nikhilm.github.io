@@ -17,7 +17,7 @@ const experienceData = [
 
             "Developed .NET Core Web APIs with Entity Framework and LINQ on SQL Server/MySQL backends, and implemented Redis caching that reduced average API response time by 25%.",
 
-            "Implemented JWT-based authentication and OAuth 2.0 authorization across enterprise applications, securing API endpoints and enforcing role-based access control.",
+            "Implemented JWT-based authentication across enterprise applications, securing API endpoints and enforcing role-based access control.",
 
             "Built a reusable Angular component library adopted across 3 projects, reducing frontend development time by ~30%, while applying best practices such as Lazy Loading, RxJS, NgRx, and Angular Material.",
 
@@ -49,7 +49,6 @@ const experienceData = [
             "MySQL",
             "Redis",
             "JWT",
-            "OAuth 2.0",
             "Microsoft Azure",
             "Azure Functions",
             "Application Insights",
