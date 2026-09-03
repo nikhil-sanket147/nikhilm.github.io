@@ -5,39 +5,55 @@ const experienceData = [
 
         title: "Senior Software Engineer / Lead Developer",
 
-        company: "CentraLogic Consultancy Pvt. Ltd",
+        company: "CentraLogic Consultancy Pvt. Ltd.",
 
         location: "Pune, India",
 
-        period: "Mar 2023 – Present",
+        period: "Mar 2023 - Jul 2026",
 
         responsibilities: [
 
-            "Led architecture and full-stack development of 4+ enterprise applications using Angular, .NET Core, React JS, and Flutter, each serving 500+ active users in production.",
+            "Led architecture and full-stack development of 3+ enterprise applications using .NET Core (C#, ASP.NET Web API, Entity Framework, Microservices) and Angular (v7 - v20), each serving 500+ active users in production.",
 
-            "Built a reusable Angular component library used across 3 projects, reducing frontend development time by ~30% and improving code consistency.",
+            "Developed .NET Core Web APIs with Entity Framework and LINQ on SQL Server/MySQL backends, and implemented Redis caching that reduced average API response time by 25%.",
 
-            "Designed and deployed RESTful .NET Core APIs supporting high-performance, scalable backends — reducing average API response time by 25%.",
+            "Implemented JWT-based authentication and OAuth 2.0 authorization across enterprise applications, securing API endpoints and enforcing role-based access control.",
 
-            "Led a team of 5 engineers across 2-week Agile sprints; conducted daily standups, code reviews, and backlog grooming — achieving on-time delivery across all major milestones.",
+            "Built a reusable Angular component library adopted across 3 projects, reducing frontend development time by ~30%, while applying best practices such as Lazy Loading, RxJS, NgRx, and Angular Material.",
 
-            "Collaborated directly with clients to gather requirements, translate business needs into technical specifications, and deliver production-ready software.",
+            "Wrote unit tests using Jasmine and Karma and integrated Application Insights for monitoring, improving code reliability and enabling proactive detection of performance issues.",
 
-            "Mentored 2 junior developers, establishing frontend coding standards and improving overall code quality.",
+            "Led a team of 3 engineers across 2-week Agile sprints using JIRA, conducting standups, code reviews, and backlog grooming — achieving on-time delivery across all major milestones.",
 
-            "Contributed to cloud-ready deployments on Microsoft Azure and established Git-based version control workflows across the team."
+            "Collaborated directly with clients to gather requirements and translate business needs into technical specifications; mentored 2 junior developers on Angular and C# coding standards.",
+
+            "Contributed to cloud-ready deployments on Microsoft Azure, including serverless components via Azure Functions and Git-based version control workflows."
 
         ],
 
         technologies: [
 
-            "Angular",
             ".NET Core",
-            "React",
-            "Flutter",
-            "REST APIs",
+            "C#",
+            "ASP.NET Web API",
+            "ASP.NET MVC",
+            "Entity Framework",
+            "LINQ",
+            "Microservices",
+            "Angular v7 - v20",
+            "TypeScript",
+            "RxJS",
+            "NgRx",
+            "Angular Material",
+            "SQL Server",
+            "MySQL",
+            "Redis",
+            "JWT",
+            "OAuth 2.0",
             "Microsoft Azure",
-            "Agile",
+            "Azure Functions",
+            "Application Insights",
+            "JIRA",
             "Git"
 
         ]
@@ -49,29 +65,30 @@ const experienceData = [
 
         title: "Software Engineer",
 
-        company: "A2Z InfoTech Pvt. Ltd",
+        company: "A2Z InfoTech Pvt. Ltd.",
 
-        location: "Pune, India",
+        location: "Ahilyanagar, India",
 
-        period: "Sep 2022 – Feb 2023",
+        period: "Jun 2022 - Feb 2023",
 
         responsibilities: [
 
-            "Developed responsive web interfaces using Angular, HTML5, CSS3, and Bootstrap for client-facing applications.",
+            "Developed and maintained .NET Core / ASP.NET Web API backend services using C#, Entity Framework, and LINQ with SQL Server, building secure and scalable data access layers for client-facing applications.",
 
-            "Built backend features using Node.js and REST APIs, contributing to end-to-end delivery of web applications within tight deadlines.",
+            "Built and consumed RESTful APIs using .NET Core, contributing to end-to-end delivery of web applications within tight deadlines.",
 
-            "Collaborated in a team environment to deliver 2 web applications, gaining hands-on experience across the full development lifecycle."
+            "Collaborated in a team environment to deliver 2 web applications, gaining hands-on experience across the full SDLC."
 
         ],
 
         technologies: [
 
-            "Angular",
-            "HTML5",
-            "CSS3",
-            "Bootstrap",
-            "Node.js",
+            ".NET Core",
+            "C#",
+            "ASP.NET Web API",
+            "Entity Framework",
+            "LINQ",
+            "SQL Server",
             "REST APIs"
 
         ]

@@ -27,17 +27,6 @@ const certificationsData = [
     {
         id: 3,
 
-        name: "Flutter Development",
-
-        issuer: "Coursera",
-
-        pdf: "assets/certificates/coursera-flutter.pdf"
-
-    },
-
-    {
-        id: 4,
-
         name: "HTML & CSS",
 
         issuer: "Coursera",
@@ -47,7 +36,7 @@ const certificationsData = [
     },
 
     {
-        id: 5,
+        id: 4,
 
         name: "Programming with JavaScript",
 
@@ -58,7 +47,7 @@ const certificationsData = [
     },
 
     {
-        id: 6,
+        id: 5,
 
         name: "OKR Certification",
 
@@ -69,7 +58,7 @@ const certificationsData = [
     },
 
     {
-        id: 7,
+        id: 6,
 
         name: "Advanced React JS",
 
@@ -80,7 +69,7 @@ const certificationsData = [
     },
 
     {
-        id: 8,
+        id: 7,
 
         name: "Version Control",
 

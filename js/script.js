@@ -696,7 +696,7 @@ document.addEventListener(
 // =============================
 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-menu a");
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
 window.addEventListener("scroll", () => {
 

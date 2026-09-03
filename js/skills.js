@@ -4,14 +4,15 @@ const skillsData = [
         category: "Frontend",
 
         skills: [
-            "Angular (v7–v20)",
-            "React JS",
+            "Angular (v12–17)",
             "TypeScript",
             "JavaScript (ES6+)",
+            "RxJS",
+            "NgRx",
+            "Angular Material",
             "HTML5",
             "CSS3",
-            "Angular Material",
-            "Bootstrap"
+            "Unit Testing (Jasmine, Karma)"
         ]
 
     },
@@ -21,31 +22,27 @@ const skillsData = [
 
         skills: [
             ".NET Core",
+            "C#",
+            "ASP.NET Web API",
+            "ASP.NET MVC",
             "RESTful APIs",
+            "Entity Framework",
+            "LINQ",
             "Microservices",
-            "API Integration",
-            "Node.js (Basic)"
+            "Event-Driven Architecture",
+            "JWT & OAuth 2.0 Authentication",
+            "CI/CD Pipelines"
         ]
 
     },
 
     {
-        category: "Mobile",
+        category: "Database & Caching",
 
         skills: [
-            "Flutter",
-            "BLoC Architecture",
-            "Cross-Platform Development"
-        ]
-
-    },
-
-    {
-        category: "Database",
-
-        skills: [
+            "SQL Server",
             "MySQL",
-            "Oracle DB"
+            "Redis (Caching)"
         ]
 
     },
@@ -55,8 +52,13 @@ const skillsData = [
 
         skills: [
             "Microsoft Azure",
+            "Azure Functions (Serverless)",
+            "Application Insights",
             "Git",
-            "GitHub"
+            "GitHub",
+            "Swagger",
+            "Postman",
+            "JIRA"
         ]
 
     },
@@ -66,8 +68,10 @@ const skillsData = [
 
         skills: [
             "Agile / Scrum",
-            "System Design",
+            "SOLID Principles",
+            "Design Patterns",
             "Component-Based Architecture",
+            "System Design",
             "Code Review",
             "SDLC"
         ]
