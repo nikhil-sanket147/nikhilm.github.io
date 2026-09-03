@@ -4,7 +4,7 @@ const skillsData = [
         category: "Frontend",
 
         skills: [
-            "Angular (v12–17)",
+            "Angular (v7-20)",
             "TypeScript",
             "JavaScript (ES6+)",
             "RxJS",
